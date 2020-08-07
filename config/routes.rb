@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'static_pages#home'
 
   get 'static_pages/news'
@@ -8,5 +9,8 @@ Rails.application.routes.draw do
   get 'static_pages/record'
 
   get 'static_pages/inquiry'
-
+  
+  get 'static_pages/user'
+  
+  resources :schedules
 end

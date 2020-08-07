@@ -1,0 +1,10 @@
+<h1>New Schedule</h1>
+<%= form_for(@schedule, url: schedules_path, method: :post) do |f| %>
+  <%=f.label :date %>
+  <%= f.date_select  :date %><br/>
+  <%=f.label :content %>
+  <%= f.text_field  :content %><br/>
+  <%= f.submit '登録', class: 'btn btn-primary' %>
+  <%= link_to :back do%><button>戻る</button><% end %>
+
+<% end %>
