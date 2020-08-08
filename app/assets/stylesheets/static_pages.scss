@@ -1,3 +1,18 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap"; 
+
+//header
+header{
+    opacity: 0.8;
+}
+
+.logo-name{
+    padding-top: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding-right: 25px;
+    
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: 	#CC3333;
+}
