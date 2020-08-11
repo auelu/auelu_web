@@ -1,5 +1,11 @@
 @import "bootstrap"; 
 
+html,
+body{
+  height: 100%;
+}
+
+
 //header
 header{
     opacity: 0.8;
@@ -15,4 +21,105 @@ header{
 }
 .navbar-light .navbar-nav .nav-link:hover {
     color: 	#CC3333;
+}
+
+//home
+.jumbotron{
+    background-image: url(home.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.news{
+    background-color: #FFF; 
+    padding: 80px;
+}
+
+.box_srcollbar {
+    overflow: auto;
+    width: 60%;
+    height: 300px;
+    padding: 5px;
+    background-color: #F9F9F9;
+    color: #000;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.box_srcollbar p {
+    margin-bottom: 2px;
+    padding: 5px 30px;
+    border-bottom: solid 2px #C0C0C0;
+}
+
+.box_title h3{
+    padding:20px;
+    width:300px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:#000;
+    margin: 0 auto;
+}
+.box_title span{
+    display: block;
+    color: #CC0000;
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
+.catalogue{
+    color: white;
+}
+
+.catalogue .row{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 50px;
+}
+.topNav {
+    padding: 102px 150px 0;
+    background-color: #FFCCCC;
+}
+
+.containt-items {
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-150px);
+    background-color: #EEE;
+    color: #000;
+    border: solid 1px;
+}      
+
+
+.containt-items h3{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 10px;
+}
+.containt-items span{
+    display: block;
+    color: #CC0000;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.containt-items a {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; 
+}
+.containt-items:hover {
+    transform:  translateY(-130px);
+    transition: all 1.5s;
 }
