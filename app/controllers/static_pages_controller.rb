@@ -8,9 +8,12 @@ class StaticPagesController < ApplicationController
   def introduction
   end
 
-  def record
+  def result
+  end
+  
+  def schedule
   end
 
-  def inquiry
+  def contact
   end
 end
