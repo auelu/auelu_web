@@ -10,14 +10,11 @@ Rails.application.routes.draw do
   
   get '/schedule', to: 'static_pages#schedule'
 
-<<<<<<< HEAD
+  get '/contact', to: 'static_pages#contact'
+
   get 'static_pages/inquiry'
   
   get 'static_pages/user'
   
   resources :schedules
-=======
-  get '/contact', to: 'static_pages#contact'
-
->>>>>>> 742a39d0f9b93522e432777772aee22a045842b0
 end
