@@ -1,3 +1,242 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap"; 
+
+html,
+body{
+  height: 100%;
+}
+
+
+//header
+header{
+    opacity: 0.8;
+}
+
+.logo-name{
+    padding-top: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding-right: 25px;
+    
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: 	#CC3333;
+}
+
+//home
+.jumbotron-home{
+    background-image: url(home.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.news{
+    background-color: #FFF; 
+    padding: 80px;
+}
+
+.box_srcollbar {
+    overflow: auto;
+    width: 60%;
+    height: 300px;
+    padding: 5px;
+    background-color: #F9F9F9;
+    color: #000;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.box_srcollbar p {
+    margin-bottom: 2px;
+    padding: 5px 30px;
+    border-bottom: solid 2px #C0C0C0;
+}
+
+.box_title h3{
+    padding:20px;
+    width:300px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:#000;
+    margin: 0 auto;
+}
+.box_title span{
+    display: block;
+    color: #CC0000;
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
+.catalogue{
+    color: white;
+}
+
+.catalogue .row{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 50px;
+}
+.topNav {
+    padding: 102px 150px 0;
+    background-color: #FFCCCC;
+}
+
+.containt-items {
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-150px);
+    background-color: #EEE;
+    color: #000;
+    border: solid 1px;
+}      
+
+
+.containt-items h3{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 10px;
+}
+.containt-items span{
+    display: block;
+    color: #CC0000;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.containt-items a {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; 
+}
+.containt-items:hover {
+    transform:  translateY(-130px);
+    transition: all 1.5s;
+}
+
+//introduce
+.jumbotron-other {
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    background-position: center center;
+    height: 280px;
+}
+
+.inner {
+    margin: 100px auto 100px;
+    max-width: 1100px;
+    position: relative;
+    
+}
+
+.inner h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 15px;
+    background: #fff;
+    width: 444px;
+    height: 181px;
+    padding: 45px 0 0 40px;
+}
+
+.inner span {
+    display: block;
+    color: #CC0000;
+    padding: 14px 0 0;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.container-other {
+    background-color: #EEE;
+    height: 100px;
+}
+
+.link {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    clear: both;
+    overflow: hidden;
+    padding-left: 480px;
+    list-style: none;
+}
+
+.link li {
+    float: left;
+    margin-right: 7px;
+    padding-right: 13px;
+    background-size: 5px 7px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.link a {
+    color: #000;
+    opacity: 0.7;
+}
+
+.link a:hover {
+    color: 	#CC3333;
+    text-decoration: none;
+}
+
+.introduce {
+    text-align: center;
+}
+
+.introduce h3 {
+    padding:50px 0 30px;
+    width:400px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 25px;
+    color:#000;
+    margin: 0 auto;
+}
+
+.introduce span {
+    display: block;
+    color: #CC0000;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 1px solid #CCC;
+    font-family: 'Noto Serif JP', serif;
+    
+}
+th {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 10px;
+    width: 25%;
+    border-bottom: 1px solid #CCC;
+}
+td {
+    font-size: 20px;
+    padding: 20px 10px;
+    width: 75%;
+    border-bottom: 1px solid #CCC;
+    line-height: 1.8;
+    
+}
