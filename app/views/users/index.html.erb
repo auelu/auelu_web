@@ -1,2 +1,11 @@
-<br><br><br><br><br>
-<%= render 'users/user'%>
+<% @title = "選手紹介" %>
+<div class="jumbotron jumbotron-fluid jumbotron-other">
+    <div class="inner">
+        <h2>選手紹介<span>PLAYER</span></h2>
+        <%= render '/shared/hometag' %>
+    </div>
+</div>
+<div class="cantainer-fuild container-other">
+    </br></br></br></br></br>
+    <%= render '/users/user' %>
+</div>

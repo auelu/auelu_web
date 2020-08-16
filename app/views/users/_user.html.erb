@@ -2,19 +2,19 @@
   <thead>
     <tr>
       <th>写真</th>
+      <th>背番号</th>
       <th>名前</th>
       <th>誕生日</th>
-      <th>高校</th>
-      <th>所属</th>
+      <th>前所属</th>
     </tr>
   </thead>
   <tbody>
     <% User.all.each do |u| %>
     <tr>
       <th><%= image_tag photo_user_path(u) %></th>
+      <th><%= u.number %></th>
       <th><%= u.name %></th>
       <th><%= u.birthday %></th>
-      <th><%= u.school %></th>
       <th><%= u.belong %></th>
     </tr>
     <% end %>
