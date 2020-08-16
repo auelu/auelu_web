@@ -5,7 +5,12 @@ class SchedulesController < ApplicationController
   def create
     @schedule = Schedule.new(schedule_params)
     if @schedule.save
-      redirect_to root_url
+      Schedule.order("date").each do |s|
+        if s.date < Date.today
+          s.destroy
+        end
+      end
+      redirect_to schedule_path
     else
       render :new
     end

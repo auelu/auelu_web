@@ -1,0 +1,18 @@
+</br></br></br></br></br></br>
+<%= form_for @user do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %></br>
+<%= f.label :number %>
+<%= f.text_field :number %></br>
+<%= f.label :school %>
+<%= f.text_field :school %></br>
+<%= f.label :belong %>
+<%= f.text_field :belong %></br>
+<%= f.label :birthday %>
+<%= f.date_select  :birthday, start_year:Time.now.year,end_year:1940 %></br>
+<%= f.label :photo %>
+<%= f.file_field :photo %></br>
+<%= f.submit 'Save' %>
+
+<% end %>

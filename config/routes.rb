@@ -16,5 +16,9 @@ Rails.application.routes.draw do
   
   get 'static_pages/user'
   
+  resource :login,  :only =>[:show,:create]
   resources :schedules
+  resources :users do
+    member{get :photo}
+  end
 end
