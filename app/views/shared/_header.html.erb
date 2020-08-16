@@ -4,7 +4,15 @@
             <%= link_to image_tag('auelulogo.png', width: 65), root_path, class: "logo-img" %>
             <%= link_to image_tag('aueluname.png', width: 250), root_path, class: "logo-name" %>
         </a>
-        <div class="collapse navbar-collapse justify-content-end">
+        <button class="navbar-toggler" type="button"
+      data-toggle="collapse"
+      data-target="#navmenu"
+      aria-controls="navmenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <%= link_to "ホーム", root_path, class: "nav-link" %>
