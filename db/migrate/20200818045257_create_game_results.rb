@@ -5,7 +5,7 @@ class CreateGameResults < ActiveRecord::Migration[5.1]
       t.string :gametitle
       t.string :gameplace
       t.string :gameopponent
-      t.string  :gameopponent
+      t.string :gamepoint
       t.string :gameassistant
       
       t.timestamps

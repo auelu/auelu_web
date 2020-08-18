@@ -19,6 +19,6 @@ class ResultController < ApplicationController
   end
   private
     def gamedate_params
-      params.require(:game_result).permit(:gamedate, :gametitle, :gameplace, :gameopponent,  :gameopponent, :gameassistant)
+      params.require(:game_result).permit(:gamedate, :gametitle, :gameplace, :gameopponent,  :gamepoint, :gameassistant)
     end
 end
