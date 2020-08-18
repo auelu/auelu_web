@@ -5,6 +5,9 @@ body{
   height: 100%;
 }
 
+ul {
+    list-style: none;
+}
 
 //header
 header{
@@ -26,6 +29,29 @@ header{
 .navbar-toggler {
     border-color: rgba(0,0,0,0);
 }
+
+//footer
+.background-footer-up{
+    background-image: url(background-footer-down.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+.background-footer-up li{
+    font-size: 10px;
+}
+.background-footer-up p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.background-footer-up a {
+    color: #EEE;
+}
+.background-footer-down {
+    background-color: #222;
+    padding: 30px 0;
+}
+
 //home
 .jumbotron-home{
     background-image: url(home.jpg);
@@ -59,7 +85,7 @@ header{
     border-bottom: solid 2px #C0C0C0;
 }
 
-.box_title h3{
+.box_title #news{
     padding:20px;
     width:300px;
     font-family: 'Noto Serif JP', serif;
@@ -86,7 +112,7 @@ header{
 }
 .topNav {
     padding: 102px 150px 0;
-    background-color: #FFCCCC;
+    background-color: #F5F5F5;
 }
 
 .containt-items {
@@ -174,7 +200,6 @@ header{
     clear: both;
     overflow: hidden;
     padding-left: 480px;
-    list-style: none;
 }
 
 .link li {
@@ -274,4 +299,9 @@ td {
     opacity: 0.5;
     text-decoration: none;
     color: #fff;
+}
+
+.footer-font {
+    font-size: 11px;
+    padding: 3px 5px;
 }
