@@ -9,6 +9,7 @@ ul {
     list-style: none;
 }
 
+
 //header
 header{
     opacity: 0.8;
@@ -64,7 +65,8 @@ header{
 
 .news{
     background-color: #FFF; 
-    padding: 80px;
+    padding-top: 80px;
+    padding-bottom: 180px;
 }
 
 .box_srcollbar {
@@ -72,17 +74,18 @@ header{
     width: 60%;
     height: 300px;
     padding: 5px;
-    background-color: #F9F9F9;
     color: #000;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    border-top: solid 1px #C0C0C0;
+    border-bottom: solid 1px #C0C0C0;
 }
 .box_srcollbar p {
     margin-bottom: 2px;
     padding: 5px 30px;
-    border-bottom: solid 2px #C0C0C0;
+    border-bottom: solid 1px #C0C0C0;
 }
 
 .box_title #news{
@@ -111,7 +114,7 @@ header{
     padding: 50px;
 }
 .topNav {
-    padding: 102px 150px 0;
+    padding: 40px 150px 0;
     background-color: #F5F5F5;
 }
 
@@ -121,9 +124,7 @@ header{
     position: relative;
     z-index: 1;
     transform: translateY(-150px);
-    background-color: #EEE;
     color: #000;
-    border: solid 1px;
 }      
 
 
@@ -150,6 +151,23 @@ header{
 .containt-items:hover {
     transform:  translateY(-130px);
     transition: all 1.5s;
+}
+
+.home-items {
+    background-color: #FFF;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.insta-extend {
+    width: 50px;
+}
+
+.insta-table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 //introduce
