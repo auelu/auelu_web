@@ -31,26 +31,26 @@
 <div class="container-fuild">
     <div class="container-fuild topNav  ">
         <div class="row catalogue">
-            <div class="col-xs-12 col-lg-4 containt-items">
+            <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'about.jpg', width: "400px"%>
+                    <%= image_tag 'about.jpg', width: "100%"%>
                     <h3>チーム概要<span>ABOUT</span></h3>
                     <p>aaaaaaaaa</p>
                     <%= link_to "", introduction_path %>  
                 </div>
                 
             </div>
-            <div class="col-xs-12 col-lg-4 containt-items">
+            <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'result.jpg', width: "400px"%>
+                    <%= image_tag 'result.jpg', width: "100%"%>
                     <h3>試合結果<span>RESULT</span></h3>
                     <p>bbbbbbbbb</p>
                     <%= link_to "", result_path %>
                 </div>
             </div>
-            <div class="col-xs-12 col-lg-4 containt-items">
+            <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'schedule.jpg', width: "400px"%>
+                    <%= image_tag 'schedule.jpg', width: "100%"%>
                     <h3>スケジュール<span>SCHEDULE</span></h3>
                     <p>ccccccccc</p>
                     <%= link_to "", schedule_path %>
@@ -59,7 +59,8 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <h2>Instagram</h2>
+<div class="container font insta-font">
+    <h2>公式Instagram</h2>
+    <span>OfficialInstagram</span>
     <%= render '/shared/instaapi' %>
 </div>

@@ -56,12 +56,14 @@ header{
 //home
 .jumbotron-home{
     background-image: url(home.jpg);
-    height: 100%;
+    width: 100%;
+    height: 0;
+    padding-top: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
     background-position: center center;
-}
+    background-attachment: fixed;}
 
 .news{
     background-color: #FFF; 
@@ -131,6 +133,7 @@ header{
 .containt-items h3{
     font-family: 'Noto Serif JP', serif;
     font-size: 10px;
+    padding-top: 30px;
 }
 .containt-items span{
     display: block;
@@ -155,8 +158,12 @@ header{
 
 .home-items {
     background-color: #FFF;
-    width: 400px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.insta-font {
+    padding: 23px 0;
 }
 
 .insta-extend {
@@ -258,6 +265,15 @@ header{
     color: #CC0000;
     font-size: 20px;
     letter-spacing: 3px;
+}
+
+.font-contact {
+    padding: 30px 0;
+}
+
+.auelu-about {
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 table {
