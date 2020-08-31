@@ -18,7 +18,9 @@ Rails.application.routes.draw do
   get 'static_pages/user'
   
   
+  
   resource :login,  :only =>[:show,:create]
+  resources :informations
   resources :schedules,:results,:informations
   resources :users
 
