@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:photo]
   def new
     @user=User.new
   end
@@ -23,13 +22,7 @@ class UsersController < ApplicationController
   end
   def delete
   end
-  def photo
-    send_data(@user.photo,type: @user.photo_content_type, disposition: :inline)
-  end
   private
-    def set_user
-      @user = User.find(params[:id])
-    end
     def user_params
       params.require(:user).permit(:name,:number,:birthday,:school,:belong) 
   

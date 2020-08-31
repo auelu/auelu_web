@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'informations/new'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'static_pages#home'
 
@@ -17,9 +19,6 @@ Rails.application.routes.draw do
   
   
   resource :login,  :only =>[:show,:create]
-  resources :schedules
-  resources :results
-  resources :users do
-    member{get :photo}
-  end
+  resources :schedules,:results,:informations
+  resources :users
 end

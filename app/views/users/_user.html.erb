@@ -11,7 +11,7 @@
   <tbody>
     <% User.all.each do |u| %>
     <tr>
-      <th><%= image_tag photo_user_path(u) %></th>
+      <th><%= image_tag u.photo %></th>
       <th><%= u.number %></th>
       <th><%= u.name %></th>
       <th><%= u.birthday %></th>
