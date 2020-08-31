@@ -1,4 +1,13 @@
-<div class = "margine1">
+<% @title = "試合結果" %>
+<div class="jumbotron jumbotron-fluid jumbotron-other">
+    <div class="inner">
+        <h2>試合結果<span>RESULT</span></h2>
+        <%= render '/shared/hometag' %>
+    </div>
+</div>
+<div class="cantainer-fuild container-other">
+</div>
+<div class = "resultshow">
   <dl>
     <dt>日付</dt>
     <dd><%= @gamedata.gamedate %></dd>
@@ -11,4 +20,5 @@
     <dt>得点</dt>
     <dd><%= @gamedata.gameassistant %></dd>
   </dl>
+  <%= link_to "戻る", results_path %>
 </diV>
