@@ -12,22 +12,17 @@ class StaticPagesController < ApplicationController
     if @result.created_at>Date.today
       updatenewcontent('試合結果');
     end
-    
     if Information.all.size>10
       Information.first.destroy
     end
   end
-
   def introduction
   end
-  
   def schedule
   end
-
   def contact
   end
-  
-  def updatenewcontent content
-    information=Information.new(date: Date.today+5, newcontent: content+"を更新しました").save
+  def updatenewcontent(content)
+    information=Information.new(date: Date.today, newcontent: content+"を更新しました").save
   end
 end
