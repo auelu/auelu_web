@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   resource :login,  :only =>[:show,:create]
   resources :schedules,:results,:informations
   resources :users
+
 end
