@@ -5,6 +5,7 @@ class CreateInformation < ActiveRecord::Migration[5.1]
       t.string :newcontent
 
       t.timestamps
+      t.index [:newcontent, :date], :unique => true
     end
   end
 end

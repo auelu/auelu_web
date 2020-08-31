@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20200831052039) do
     t.string "newcontent"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["newcontent", "date"], name: "index_information_on_newcontent_and_date", unique: true
   end
 
   create_table "schedules", force: :cascade do |t|
