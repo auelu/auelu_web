@@ -1,10 +1,16 @@
-class ResultController < ApplicationController
+class ResultsController < ApplicationController
   def new
     @gamedata = GameResult.new
   end
+  
   def show
-    @gamedata=GameResult.find(params[:id])
+    @gamedata = GameResult.find(params[:id])
   end
+  
+  def index
+    @gamedatas = GameResult.order("gamedate DESC").page(params[:page]).per(5)
+  end
+  
   def create
     @gamedata = GameResult.new(gamedate_params)
     if @gamedata.save

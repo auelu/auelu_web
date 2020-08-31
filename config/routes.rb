@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'static_pages#home'
 
   get 'static_pages/news'
 
   get '/introduction', to: 'static_pages#introduction'
 
-  get '/result', to: 'static_pages#result'
-  
   get '/schedule', to: 'static_pages#schedule'
 
   get '/contact', to: 'static_pages#contact'
@@ -19,7 +18,7 @@ Rails.application.routes.draw do
   
   resource :login,  :only =>[:show,:create]
   resources :schedules
-  resources :result
+  resources :results
   resources :users do
     member{get :photo}
   end

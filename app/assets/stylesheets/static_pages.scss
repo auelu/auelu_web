@@ -117,7 +117,7 @@ header{
 }
 .topNav {
     padding: 40px 150px 0;
-    background-color: #F5F5F5;
+    background-image: url(home-img.jpg);
 }
 
 .containt-items {
@@ -129,6 +129,9 @@ header{
     color: #000;
 }      
 
+.container-items p {
+    padding-bottom: 20px;    
+}
 
 .containt-items h3{
     font-family: 'Noto Serif JP', serif;
@@ -302,6 +305,11 @@ td {
     
 }
 
+.unipadding {
+    padding-bottom: 20px;
+    background-image: url(home-img.jpg);
+}
+
 //contact
 .instagram-font {
   font-family:'Pacifico', cursive;
@@ -342,4 +350,21 @@ td {
 
 .result a{
     color: #000;
+}
+
+//pagenate
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #FF4F50;
+    border-color: #DDD;
+    
+}
+.pagination {
+  justify-content: center;
+}
+
+.page-link {
+    color: #808080;
+    margin: 10px;
 }

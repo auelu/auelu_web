@@ -1,0 +1,25 @@
+<table class="gamedatas">
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>タイトル</th>
+      <th>対戦相手</th>
+      <th>結果</th>
+    </tr>
+  </thead>
+  <tbody class="gamedates">
+    <% @gamedatas.each do |d| %>
+    <tr class="gamedates">
+      <th><%= d.gamedate %></th>
+      <th>
+        <div class = 'result'>
+          <%= link_to d.gametitle, result_path(d) %>
+        </div>
+      </th>
+      <th><%= d.gameopponent %></th>
+      <th><%= d.gamepoint %></th>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+  <%= paginate @gamedatas %>
