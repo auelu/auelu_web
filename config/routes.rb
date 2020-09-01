@@ -15,11 +15,9 @@ Rails.application.routes.draw do
   
   get 'static_pages/user'
   
-    get 'informations/new'
-  
-  resource :login,  :only =>[:show,:create]
-  resources :informations
-  resources :schedules,:results,:informations
-  resources :users
+  resources :schedules,  :except =>[:new,:update,:delete,:edit]
+  resources :informations,  :except =>[:new,:update,:delete,:edit]
+  resources :results,  :except =>[:new,:update,:delete,:edit]
+  resources :users,  :except =>[:new,:update,:delete,:edit]
 
 end

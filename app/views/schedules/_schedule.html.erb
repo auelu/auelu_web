@@ -10,7 +10,12 @@
       <%if s.date >= Date.today %>
         <tr>
           <% d=s.date.to_s.gsub('-','/')  #変更可 2020-8-12->2020/8/12%> 
-          <th><%= d %></th>
+          <th>
+            <% if s.created_at > Date.parse(Schedule.last.created_at.to_s) && Schedule.last.created_at >Date.today-7%>
+              <%= image_tag "new.gif"%>
+            <% end %>
+            <%= d %>
+          </th>
           <th><%= s.content %></th>
        </tr>
       <% end %>
