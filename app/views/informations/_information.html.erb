@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>更新日</th>
+            <th>内容</th>
+        </tr>
+    </thead>
+    <% Information.last(6).reverse.each do |i| %>
+    <tbody>
+        <tr>
+            <th><%= i.date %></th>
+            <th><%= i.newcontent %></th>
+        </tr>
+    </tbody>
+    <% end %>
+</table>
+
+

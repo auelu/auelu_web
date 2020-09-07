@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200818045257) do
+ActiveRecord::Schema.define(version: 20200831052039) do
 
   create_table "game_results", force: :cascade do |t|
     t.date "gamedate"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 20200818045257) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "information", force: :cascade do |t|
+    t.date "date"
+    t.string "newcontent"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["newcontent", "date"], name: "index_information_on_newcontent_and_date", unique: true
+  end
+
   create_table "schedules", force: :cascade do |t|
     t.date "date"
     t.string "content"
@@ -33,8 +41,7 @@ ActiveRecord::Schema.define(version: 20200818045257) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "number"
-    t.binary "photo"
-    t.string "photo_content_type"
+    t.string "photo"
     t.date "birthday"
     t.string "school"
     t.string "belong"
