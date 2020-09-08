@@ -10,9 +10,9 @@ class ResultsController < ApplicationController
   def index
     # @gamedatas = GameResult.order("gamedate DESC").page(params[:page]).per(5)
     from = Time.zone.now.at_beginning_of_day
-to = (from + 1.year)
-items = GameResult.where(gamedate: from..to)
-@gamedatas = items.page(params[:page])
+    to = (from + 1.year)
+    items = GameResult.where(gamedate: from..to)
+    @gamedatas = items.page(params[:page])
   end
   
   def create

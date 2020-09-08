@@ -41,7 +41,8 @@ ActiveRecord::Schema.define(version: 20200831052039) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "number"
-    t.string "photo"
+    t.binary "photo"
+    t.string "photo_content_type"
     t.date "birthday"
     t.string "school"
     t.string "belong"
