@@ -1,0 +1,8 @@
+<div>
+    <h4 class="font-italic">アーカイブ</h4>
+<ul style="list-style:none;">
+       <% @archives.each do |yyyymm, count| %>
+            <li><%= link_to ymconv(yyyymm, count.to_s), results_archive_path(yyyymm) %></li>
+       <% end %>
+</ul>
+</div>

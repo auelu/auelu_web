@@ -8,12 +8,20 @@ class ResultsController < ApplicationController
   end
   
   def index
-    # @gamedatas = GameResult.order("gamedate DESC").page(params[:page]).per(5)
-    from = Time.zone.now.at_beginning_of_day
-    to = (from + 1.year)
-    items = GameResult.where(gamedate: from..to)
-    @gamedatas = items.page(params[:page])
+    @gamedatas = GameResult.order("gamedate DESC").page(params[:page]).per(5)
+    @archives = GameResult.group("strftime('%Y%m', gamedate)")
+                                 .order(Arel.sql("strftime('%Y%m', gamedate) desc"))
+                                 .count
   end
+  
+  def archives
+    @yyyymm = params[:yyyymm]
+    @archives = GameResult.group("strftime('%Y%m', gamedate)")
+                                 .order(Arel.sql("strftime('%Y%m', gamedate) desc"))
+                                 .count
+    @gamedatas = GameResult.where("strftime('%Y%m', gamedate) = '"+@yyyymm+"'").order("gamedate DESC").page(params[:page]).per(5)
+  end
+  
   
   def create
     @gamedata = GameResult.new(gamedate_params)

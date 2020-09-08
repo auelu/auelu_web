@@ -1,7 +1,13 @@
-<div class="container">
-  <div class="row">
-    <div class="col-9">
-      <table class="gamedatas">
+<% @title = "試合結果" %>
+<div class="jumbotron jumbotron-fluid jumbotron-other">
+    <div class="inner">
+        <h2>試合結果<span>RESULT</span></h2>
+        <%= render '/shared/hometag' %>
+    </div>
+</div>
+<div class="cantainer-fuild container-other">
+</div>
+<table class="gamedatas">
   <thead>
     <tr>
       <th>日付</th>
@@ -25,13 +31,7 @@
     <% end %>
   </tbody>
 </table>
-<%= paginate @gamedatas %>
-    </div>
-      <div class="col-3 log">
-        <%= render 'results/sidebar' %>  
-      </div>
-  </div>
-
-</div>
-
-  
+  <%= paginate @gamedatas %>
+<%= link_to :back do %>
+  <button>戻る</button>
+<% end %>
