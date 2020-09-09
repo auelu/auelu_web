@@ -36,6 +36,7 @@ gem 'font-awesome-sass', '~> 5.4.1'
 gem 'rails_admin', '~> 2.0'
 gem 'kaminari'
 gem 'rails-i18n', '~> 5.1' 
+gem 'groupdate'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

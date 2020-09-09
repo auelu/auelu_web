@@ -9,13 +9,17 @@ class ResultsController < ApplicationController
   
   def index
     @gamedatas = GameResult.order("gamedate DESC").page(params[:page]).per(5)
-    @archives = GameResult.pluck(:gamedate).group_by {|timezone| timezone.strftime('%Y%m')}.map {|k, v| [k, v.size]}.sort.reverse
+    @archives = GameResult.group_by_month(:gamedate, format: "%Y年%m月", reverse: true, series: false).count
   end
   
   def archives
     @yyyymm = params[:yyyymm]
-    @archives = GameResult.pluck(:gamedate).group_by {|timezone| timezone.strftime('%Y%m')}.map {|k, v| [k, v.size]}.sort.reverse
-    @gamedatas = GameResult.where("strftime('%Y%m', gamedate) = '"+@yyyymm+"'").order("gamedate DESC").page(params[:page]).per(5)
+    @archives = GameResult.group_by_month(:gamedate, format: "%Y年%m月", reverse: true, series: false).count
+    yyyy = @yyyymm[0,4].to_i
+    mm =   @yyyymm.delete("月")[5,2].to_i
+    end_of_date = Date.new(yyyy, mm, -1)
+    date = Date.new(yyyy, mm, 1)
+    @gamedatas = GameResult.where(gamedate: date..end_of_date).order("gamedate DESC").page(params[:page]).per(5)
   end
   
   
