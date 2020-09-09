@@ -8,6 +8,7 @@
       <th>タイトル</th>
       <th>対戦相手</th>
       <th>結果</th>
+      <th>　　</th>
     </tr>
   </thead>
   <tbody class="gamedatas">
@@ -16,11 +17,12 @@
       <th><%= d.gamedate %></th>
       <th>
         <div class = 'result'>
-          <%= link_to d.gametitle, result_path(d) %>
+          <%= d.gametitle  %>
         </div>
       </th>
       <th><%= d.gameopponent %></th>
       <th><%= d.gamepoint %></th>
+      <th><%= link_to "詳細", result_path(d) %></th>
     </tr>
     <% end %>
   </tbody>
