@@ -15,7 +15,7 @@
             <th>
                 日付
             </th>
-            <td><%= @gamedata.gamedate %></td>
+            <th><%=  u=@gamedata.gamedate.to_s.gsub('-','/')  %></th>
         </tr>
         <tr>
             <th>

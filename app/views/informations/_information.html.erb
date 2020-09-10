@@ -8,7 +8,7 @@
     <% Information.last(6).reverse.each do |i| %>
     <tbody>
         <tr>
-            <th><%= i.date %></th>
+            <th><%= d=i.date.to_s.gsub('-','/')  %></th>
             <th><%= i.newcontent %></th>
         </tr>
     </tbody>

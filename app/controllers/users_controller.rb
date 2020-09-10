@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def index
     @user = User.order("number")
   end
+  
   def create
     @user = User.new(user_params)
     @user.photo = params[:user][:photo].read
@@ -16,7 +17,6 @@ class UsersController < ApplicationController
       render :index  
     else
       render :new
-      
     end
   end
   def edit

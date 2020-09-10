@@ -9,12 +9,12 @@ class ResultsController < ApplicationController
   
   def index
     @gamedatas = GameResult.order("gamedate DESC").page(params[:page]).per(5)
-    @archives = GameResult.group_by_month(:gamedate, format: "%Y年%m月", reverse: true, series: false).count
+    @archives = GameResult.group_by_month(:gamedate, format: "%Y/%m", reverse: true, series: false).count
   end
   
   def archives
     @yyyymm = params[:yyyymm]
-    @archives = GameResult.group_by_month(:gamedate, format: "%Y年%m月", reverse: true, series: false).count
+    @archives = GameResult.group_by_month(:gamedate, format: "%Y/%m", reverse: true, series: false).count
     yyyy = @yyyymm[0,4].to_i
     mm =   @yyyymm.delete("月")[5,2].to_i
     end_of_date = Date.new(yyyy, mm, -1)

@@ -2,6 +2,8 @@
   <thead>
     <tr>
       <th>日付</th>
+      <th>日時</th>
+      <th>場所</th>
       <th>内容</th>
     </tr>
   </thead>
@@ -16,6 +18,8 @@
             <% end %>
             <%= d %>
           </th>
+          <th><%= s.starthour %>:<%= s.startminute %>~<%= s.endhour %>:<%= s.endminute %></th>
+          <th><%= s.gameplace %></th>
           <th><%= s.content %></th>
        </tr>
       <% end %>

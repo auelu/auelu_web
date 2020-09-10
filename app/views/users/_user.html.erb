@@ -6,16 +6,15 @@
       <th>名前</th>
       <th>誕生日</th>
       <th>前所属</th>
-      <th>　　</th>
     </tr>
   </thead>
   <tbody>
     <% @user.all.each do |u| %>
     <tr>
-      <th><%= image_tag u.photo , :width => '100', :height => '150' %></th>
+      <th><%= image_tag u.photo , :width => '120', :height => '160' %></th>
       <th><%= u.number %></th>
       <th><%= u.name %></th>
-      <th><%= u.birthday %></th>
+      <th><%= d=u.birthday.to_s.gsub('-','/')%></th>
       <th><%= u.belong %></th>
     </tr>
     <% end %>

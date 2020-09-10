@@ -14,7 +14,7 @@
   <tbody class="gamedatas">
     <% @gamedatas.each do |d| %>
     <tr>
-      <th><%= d.gamedate %></th>
+      <th><%=  u=d.gamedate.to_s.gsub('-','/')  %></th>
       <th>
         <div class = 'result'>
           <%= d.gametitle  %>
