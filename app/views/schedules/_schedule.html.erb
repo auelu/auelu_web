@@ -18,7 +18,28 @@
             <% end %>
             <%= d %>
           </th>
-          <th><%= s.starthour %>:<%= s.startminute %>~<%= s.endhour %>:<%= s.endminute %></th>
+          <th><%= s.starthour %> :
+          <%= 
+          if s.startminute.to_i.zero?
+            0.to_s.rjust(2, '0')
+          else
+            s.startminute
+          end %>
+          ~
+          <%
+          unless s.endhour.to_i.zero?
+            %>
+              <%= s.endhour %> :
+            <%= 
+              if s.endminute.to_i.zero?
+                0.to_s.rjust(2, '0')
+              else
+                s.endminute
+              end %>
+              <%
+          end
+            %>
+          </th>
           <th><%= s.gameplace %></th>
           <th><%= s.content %></th>
        </tr>
