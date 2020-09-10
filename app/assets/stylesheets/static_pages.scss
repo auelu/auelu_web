@@ -63,7 +63,7 @@ header{
     background-size: cover;
     margin-bottom: 0;
     background-position: center center;
-    background-attachment: fixed;}
+}
 
 .news{
     background-color: #FFF; 
@@ -178,6 +178,11 @@ header{
   overflow-x: scroll;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+}
+
+.img_200 {
+    height: 200px;
+    border-radius: 10px;
 }
 
 //introduce

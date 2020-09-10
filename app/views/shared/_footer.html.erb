@@ -15,7 +15,6 @@
                             <li><%= link_to "チームアウエルについて", introduction_path( anchor: "about") %></li>
                             <li><%= link_to "チーム情報", introduction_path( anchor: "outline") %></li>
                             <li><%= link_to "ユニフォーム", introduction_path( anchor: "uniform") %></li>
-                            <li><%= link_to "クラブの歴史", introduction_path( anchor: "history") %></li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +41,9 @@
                     <p><%= link_to "お問い合わせ", contact_path %></p>
                     <div>
                         <ul>
-                            <li></li>
+                            <li><%= link_to "メール", contact_path( anchor: "mail") %></li>
+                            <li><%= link_to "インスタグラム", contact_path( anchor: "insta") %></li>
+                            <li><%= link_to "ツイッター", contact_path( anchor: "twitter") %></li>
                         </ul>
                     </div>
                 </div>
