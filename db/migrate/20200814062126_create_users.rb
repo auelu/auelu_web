@@ -5,7 +5,6 @@ class CreateUsers < ActiveRecord::Migration[4.2]
       t.integer :number
       t.string :photo
       t.date :birthday
-      t.string :school
       t.string :belong
 
       t.timestamps

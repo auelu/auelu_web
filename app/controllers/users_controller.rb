@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def show
   end
   def index
+    @user = User.order("number")
   end
   def create
     @user = User.new(user_params)
