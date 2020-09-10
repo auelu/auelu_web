@@ -17,6 +17,10 @@ header{
 
 .logo-name{
     padding-top: 10px;
+    margin-right: 200px;
+}
+.logo-img {
+    margin-right: 145px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -31,6 +35,10 @@ header{
     border-color: rgba(0,0,0,0);
 }
 
+.nav-item {
+    text-align: center;
+}
+
 //footer
 .background-footer-up{
     background-image: url(background-footer-down.jpg);
@@ -39,10 +47,11 @@ header{
     padding: 80px 0;
 }
 .background-footer-up li{
-    font-size: 10px;
+    font-size: 15px;
+    padding-bottom: 3px;
 }
 .background-footer-up p{
-    font-size: 15px;
+    font-size: 24px;
     font-weight: bold;
 }
 .background-footer-up a {
@@ -161,8 +170,10 @@ header{
 
 .home-items {
     background-color: #FFF;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
 
 .insta-font {
