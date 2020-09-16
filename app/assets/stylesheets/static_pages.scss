@@ -41,8 +41,8 @@ header{
 
 .navbar-toggler:not(:disabled):not(.disabled) {
     cursor: pointer;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 //footer
@@ -246,10 +246,9 @@ header{
 .link {
     position: absolute;
     right: 20px;
-    bottom: 0;
     clear: both;
     overflow: hidden;
-    padding-left: 480px;
+    padding-left: 20px;
 }
 
 .link li {
@@ -299,6 +298,7 @@ header{
 .auelu-about {
     margin: 0 auto;
     max-width: 900px;
+    padding: 0 30px;
 }
 
 table {
