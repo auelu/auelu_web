@@ -37,6 +37,7 @@ gem 'rails_admin', '~> 2.0'
 gem 'kaminari'
 gem 'rails-i18n', '~> 5.1' 
 gem 'groupdate'
+gem 'sitemap_generator'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
