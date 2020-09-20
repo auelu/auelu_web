@@ -1,9 +1,9 @@
 module ApplicationHelper
     def document_title
         if @title.present?
-            "#{@title} - TeamAuelu"
+            "#{@title} - TEAM*AUELU(チームアウエル)"
         else
-            "TeamAuelu"
+            "大阪府社会人フットサルTEAM*AUELU(チームアウエル)"
         end
     end
     

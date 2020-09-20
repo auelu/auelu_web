@@ -56,6 +56,7 @@ header{
 .background-footer-up li{
     font-size: 15px;
     padding-bottom: 3px;
+    list-style: none;
 }
 .background-footer-up p{
     font-size: 20px;
@@ -70,11 +71,23 @@ header{
 }
 
 //home
+.auelu {
+    text-align: right;
+    padding: 220px 40px;
+}
+
+.auelu h1 {
+    font-size: 3vh;
+}
+
+.auelu h2 {
+    font-size: 2.5vh;
+}
+
 .jumbotron-home{
     background-image: url(home.jpg);
     width: 100%;
-    height: 0;
-    padding-top: 40%;
+    height: 70%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
