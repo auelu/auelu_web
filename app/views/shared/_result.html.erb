@@ -14,7 +14,12 @@
   <tbody class="gamedatas">
     <% @gamedatas.each do |d| %>
     <tr>
-      <th><%=  u=d.gamedate.to_s.gsub('-','/')  %></th>
+      <th>
+        <% if d.created_at > Date.parse(GameResult.last.created_at.to_s) && GameResult.last.created_at >Date.today-7%>
+              <%= image_tag "new.gif"%>
+            <% end %>
+        <%=  u=d.gamedate.to_s.gsub('-','/')  %>
+        </th>
       <th>
         <div class = 'result'>
           <%= d.gametitle  %>

@@ -4,10 +4,10 @@ class StaticPagesController < ApplicationController
     @schedule = Schedule.last || User.new(created_at:'2000-01-01')
     @result = GameResult.last || User.new(created_at:'2000-01-01')
     if @user.created_at>Date.today
-      updatenewcontent('ユーザー情報');
+      updatenewcontent('選手情報');
     end
     if @schedule.created_at>Date.today
-      updatenewcontent('試合情報');
+      updatenewcontent('予定');
     end
     if @result.created_at>Date.today
       updatenewcontent('試合結果');

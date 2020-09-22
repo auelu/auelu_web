@@ -9,7 +9,15 @@
     <tbody>
         <tr>
             <th><%= d=i.date.to_s.gsub('-','/')  %></th>
-            <th><%= i.newcontent %></th>
+            <th>
+                <% if i.newcontent == "試合結果を更新しました" %>
+                <%= link_to i.newcontent, results_path  %>
+                <% elsif i.newcontent == "予定を更新しました" %>
+                <%= link_to i.newcontent, schedule_path  %>
+                <% else %>
+                <%= link_to i.newcontent, users_path %>
+                <% end %>
+                </th>
         </tr>
     </tbody>
     <% end %>
