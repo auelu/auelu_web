@@ -5,12 +5,18 @@
         <h2>TEAM*AUELU</h2>
 </div>
 </div>
+
+<div class="container begin">
+    <h2>大阪府高槻市の体育館で主に活動をしている社会人フットサルチームです。現在大阪府フットサルリーグ3部に所属しています。練習参加希望の方あるいは練習試合の申し込み相談
+    はお問い合わせをご確認お願いします。</h2>
+</div>
+
 <div class="container-fuild news">
     <div class="box_title">
-        <h3 id="news">
+        <h2 id="news" class="font_h2">
             お知らせ
-            <span>NEWS</span>
-        </h3></div>
+            <span class="font_span">NEWS</span>
+        </h2></div>
     <div class="box_srcollbar">
         <%= render '/informations/information' %>
     </div>
@@ -20,8 +26,8 @@
         <div class="row catalogue">
             <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'about.jpg', width: "100%", class: "img_200"%>
-                    <h3>チーム概要<span>ABOUT</span></h3>
+                    <%= image_tag 'about.jpg', width: "100%", class: "img_200", :alt => 'チームアウエルについて' %>
+                    <h2 class="font_h2">チーム概要<span class="font_span items_span">ABOUT</span></h2>
                     <p>アウエルについてはこちら</p>
                     <%= link_to "", introduction_path %>  
                 </div>
@@ -29,16 +35,16 @@
             </div>
             <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'result.jpg', width: "100%", class: "img_200"%>
-                    <h3>試合結果<span>RESULT</span></h3>
+                    <%= image_tag 'result.jpg', width: "100%", class: "img_200", :alt => 'チームアウエルの試合結果' %>
+                    <h2 class="font_h2">試合結果<span class="font_span items_span">RESULT</span></h2>
                     <p>最新の試合結果をチェック☝</p>
                     <%= link_to "", results_path %>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'schedule.jpg', width: "100%", class: "img_200"%>
-                    <h3>スケジュール<span>SCHEDULE</span></h3>
+                    <%= image_tag 'schedule.jpg', width: "100%", class: "img_200", :alt => 'チームアウエルの今後の予定' %>
+                    <h2 class="font_h2">スケジュール<span class="font_span items_span">SCHEDULE</span></h2>
                     <p>今後の予定はこちら</p>
                     <%= link_to "", schedule_path %>
                 </div>
@@ -46,8 +52,7 @@
         </div>
     </div>
 </div>
-<div class="container font insta-font">
-    <h2>公式Instagram</h2>
-    <span>OfficialInstagram</span>
+<div class="container insta-font">
+    <h2 class="font_h2">公式Instagram<span class="font_span insta_span">OfficialInstagram</span></h2>
     <%= render '/shared/instaapi' %>
 </div>

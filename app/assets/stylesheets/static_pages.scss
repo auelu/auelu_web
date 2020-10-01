@@ -5,6 +5,23 @@ body{
   height: 100%;
 }
 
+.font_h2 {
+    padding:20px;
+    width:300px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:#000;
+    margin: 0 auto;
+}
+
+.font_span {
+    display: block;
+    color: #CC0000;
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
 ul {
     list-style: none;
 }
@@ -75,6 +92,11 @@ header{
     text-align: right;
     padding: 220px 15px;
     opacity: 0.8;
+    color: #C33;
+     text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 
 .auelu h1 {
@@ -95,9 +117,18 @@ header{
     background-position: center center;
 }
 
+.begin {
+    padding-top: 55px;
+}
+
+.begin h2{
+    font-size: 16px;
+    opacity: 0.8;
+}
+
 .news{
     background-color: #FFF; 
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 180px;
 }
 
@@ -124,22 +155,6 @@ header{
 
 .box_srcollbar a:hover {
     color: #CC3333;
-}
-
-.box_title #news{
-    padding:20px;
-    width:300px;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 500;
-    font-size: 15px;
-    color:#000;
-    margin: 0 auto;
-}
-.box_title span{
-    display: block;
-    color: #CC0000;
-    font-size: 40px;
-    letter-spacing: 20px;
 }
 
 .catalogue{
@@ -169,16 +184,9 @@ header{
     padding-bottom: 20px;    
 }
 
-.containt-items h3{
-    font-family: 'Noto Serif JP', serif;
-    font-size: 10px;
-    padding-top: 30px;
-}
-.containt-items span{
-    display: block;
-    color: #CC0000;
-    font-size: 20px;
-    letter-spacing: 3px;
+.items_span {
+    letter-spacing: 3px;   
+    font-size: 30px;
 }
 
 .containt-items a {
@@ -205,6 +213,10 @@ header{
 
 .insta-font {
     padding: 23px 0;
+}
+
+.insta_span {
+    letter-spacing: 3px;    
 }
 
 .insta-extend {
