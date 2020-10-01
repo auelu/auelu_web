@@ -9,63 +9,93 @@
 
 <url>
   <loc>https://www.teamauelu.me/</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.teamauelu.me/introduction</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.teamauelu.me/users</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.teamauelu.me/results</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.teamauelu.me/schedule</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.teamauelu.me/contact</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.teamauelu.me/results/9</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.teamauelu.me/results/8</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.teamauelu.me/results/7</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.teamauelu.me/results/6</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://www.teamauelu.me/results/5</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.teamauelu.me/results/3</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.teamauelu.me/results/2</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.teamauelu.me/results/1</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <loc>https://www.teamauelu.me/results?page=2</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.teamauelu.me/results/archives/2020%2F09</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.teamauelu.me/results/archives/2020%2F08</loc>
-  <lastmod>2020-09-17T13:58:58+00:00</lastmod>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.teamauelu.me/results/3</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.teamauelu.me/results/1</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.teamauelu.me/results/2</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.teamauelu.me/results/archives/2020%2F09?page=2</loc>
+  <lastmod>2020-10-01T08:46:30+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 

@@ -14,7 +14,7 @@
           <% d=s.date.to_s.gsub('-','/')  #変更可 2020-8-12->2020/8/12%> 
           <th>
             <% if s.created_at > Date.parse(Schedule.last.created_at.to_s) && Schedule.last.created_at >Date.today-7%>
-              <%= image_tag "new.gif"%>
+              <%= image_tag "new.gif", :alt => '新しい投稿マーク'%>
             <% end %>
             <%= d %>
           </th>
