@@ -13,41 +13,37 @@
   </head>
 
   <body>
-    <div id="loading">
-  <div class="spinner"></div>
-</div>
-    <a href="#top" id="btn-backtotop"><span class="arrow arrow_up"></span></a>
+    <div id="js-scroll-fadein" class="js-scroll-fadein arrow"></div>
     <%= render "shared/header" %>
     <%= yield %>  
     <%= render "shared/footer" %>
     <script>
       window.onload = function() {
-        const spinner = document.getElementById('loading');
+        let spinner = document.getElementById('loading');
         spinner.classList.add('loaded');
       }
-      
-      let px_change = 0;
-      window.addEventListener('scroll', function(e) {
-      	let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      	if ( scrollTop > px_change ) {
-      		document.getElementById( "btn-backtotop" ).classList.add( "fadein" );
-      	} else {
-      		document.getElementById( "btn-backtotop" ).classList.remove( "fadein" );
-      	}
-      });
-       
-      document.getElementById( "btn-backtotop" ).addEventListener('click', function(e) {
-      	anime.remove("html, body");
-      	anime({
-      		targets: "html, body",
-      		scrollTop: 0,
-      		dulation: 600,
-      		easing: 'easeOutCubic',
-      	});
-      	return false;
-      });
+      function getScrolled() {
+        return ( window.pageYOffset !== undefined ) ? window.pageYOffset: document.documentElement.scrollTop;
+      }
+        
+      let topButton = document.getElementById( 'js-scroll-fadein' );
+          
+      window.onscroll = function() {
+        ( getScrolled() > 300 ) ? topButton.classList.add( 'is-fadein' ): topButton.classList.remove( 'is-fadein' );
+      };
+          
+      function scrollToTop() {
+        let scrolled = getScrolled();
+        window.scrollTo( 0, Math.floor( scrolled / 2 ) );
+        if ( scrolled > 0 ) {
+          window.setTimeout( scrollToTop, 30 );
+        }
+      };
+          
+      topButton.onclick = function() {
+        scrollToTop();
+      };
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
