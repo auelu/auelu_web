@@ -13,15 +13,21 @@
   </head>
 
   <body>
-    <div id="js-scroll-fadein" class="js-scroll-fadein arrow"></div>
+    <div id="loading">
+  <div class="spinner"></div>
+</div>
+<div id="js-scroll-fadein" class="js-scroll-fadein arrow"></div>
     <%= render "shared/header" %>
     <%= yield %>  
     <%= render "shared/footer" %>
+    
     <script>
       window.onload = function() {
-        let spinner = document.getElementById('loading');
+        const spinner = document.getElementById('loading');
         spinner.classList.add('loaded');
       }
+      
+
       function getScrolled() {
         return ( window.pageYOffset !== undefined ) ? window.pageYOffset: document.documentElement.scrollTop;
       }
@@ -34,11 +40,11 @@
           
       function scrollToTop() {
         let scrolled = getScrolled();
-        window.scrollTo( 0, Math.floor( scrolled / 2 ) );
+          window.scrollTo( 0, Math.floor( scrolled / 2 ) );
         if ( scrolled > 0 ) {
           window.setTimeout( scrollToTop, 30 );
         }
-      };
+      };  
           
       topButton.onclick = function() {
         scrollToTop();
