@@ -38,6 +38,7 @@ gem 'kaminari'
 gem 'rails-i18n', '~> 5.1' 
 gem 'groupdate'
 gem 'sitemap_generator'
+gem 'fog-aws'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
