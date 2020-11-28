@@ -14,20 +14,20 @@
   <tbody class="gamedatas">
     <% @gamedatas.each do |d| %>
     <tr>
-      <th>
+      <td>
         <% if d.created_at > Date.parse(GameResult.last.created_at.to_s) && GameResult.last.created_at >Date.today-7%>
               <%= image_tag "new.gif"%>
             <% end %>
         <%=  u=d.gamedate.to_s.gsub('-','/')  %>
-        </th>
-      <th>
+        </td>
+      <td>
         <div class = 'result'>
           <%= d.gametitle  %>
         </div>
-      </th>
-      <th><%= d.gameopponent %></th>
-      <th><%= d.gamepoint %></th>
-      <th><%= link_to "詳細", result_path(d) %></th>
+      </td>
+      <td><%= d.gameopponent %></td>
+      <td><%= d.gamepoint %></td>
+      <td><%= link_to "詳細", result_path(d) %></td>
     </tr>
     <% end %>
   </tbody>

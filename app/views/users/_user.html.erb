@@ -11,11 +11,11 @@
   <tbody>
     <% @user.all.each do |u| %>
     <tr>
-      <th><%= image_tag u.photo.to_s, :width => '150', :height => '96', :alt => '選手写真'%></th>
-      <th><%= u.number %></th>
-      <th><%= u.name %></th>
-      <th><%= d=u.birthday.to_s.gsub('-','/')%></th>
-      <th><%= u.belong %></th>
+      <td><%= image_tag u.photo.to_s, :width => '150', :height => '96', :alt => '選手写真'%></td>
+      <td><%= u.number %></td>
+      <td><%= u.name %></td>
+      <td><%= d=u.birthday.to_s.gsub('-','/')%></td>
+      <td><%= u.belong %></td>
     </tr>
     <% end %>
   </tbody>
