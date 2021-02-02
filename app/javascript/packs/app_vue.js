@@ -1,15 +1,14 @@
 import Vue from 'vue'
-import App from '../app.vue'
+import App from './app.vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import VueRouter from 'vue-router'
+import router from './router.js'
 import Insta from "./components/insta.vue"
 
 Vue.use(Vuetify)
-Vue.use(VueRouter)
 
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
+  new Vue({
     el: '#hello',
     router,
     vuetify: new Vuetify(),
@@ -17,10 +16,3 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-const router = new VueRouter({
-  routes: [
-    { path: '/',
-      component: Insta  },
-
-  ]
-})
