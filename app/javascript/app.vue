@@ -1,7 +1,5 @@
 <template>
-  <v-app>
-    <v-btn>{{ message }}</v-btn>
-  </v-app>
+  <router-view></router-view>
 </template>
 
 <script>
