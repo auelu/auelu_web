@@ -21,5 +21,11 @@ Rails.application.routes.draw do
   resources :informations,  only: [:index, :show, :create]
   resources :results,  only: [:index, :show, :create]
   resources :users,  only: [:index, :show, :create]
+  
+   namespace :api, {format: 'json'} do
+    namespace :v1 do
+      resources :instagrams, only: [:index]
+    end
+  end
 
 end
