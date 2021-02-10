@@ -6,23 +6,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="preload" as="font" type="font/woff" href="https://www.teamauelu.me/assets/font-awesome/fa-brands-400-8386356e1d512f570aac1b4883b928fe4bfd649c1d54a4d0f618357359cd3b74.woff2" crossorigin>
+
     <meta name="description" content="大阪府高槻市の体育館で主に活動をしている社会人フットサルチームです。現在大阪府フットサルリーグ3部に所属しています。体験参加、練習試合相手絶賛募集中！">
     <meta name="keywords" content="大阪府社会人フットサル,チームアウエル,TEAM*AUEU,高槻社会人フットサル"/>
     <meta name="google-site-verification" content="9BiU6xzDoDqv0bmj50mopxtb3YYAHnotVtkY0oTZcYw" />
     <meta name="viewport" content="width=580px">
-    
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script>
-jQuery(function($) {
-    $('.jumbotron-home').bgSwitcher({
-        images: ['/auelu_web/app/assets/images/about.jpg','/auelu_web/app/assets/images/home.jpg'], // 切り替える背景画像を指定
-    });
-});
-</script>
+
   </head>
 
   <body>
@@ -63,6 +56,7 @@ jQuery(function($) {
         scrollToTop();
       };
     </script>
-    
+    <%= javascript_pack_tag 'app_vue' %>
+    <%= stylesheet_pack_tag 'app_vue' %> 
   </body>
 </html>

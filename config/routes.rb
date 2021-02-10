@@ -17,9 +17,15 @@ Rails.application.routes.draw do
   
   get '/results/archives/:yyyymm', to: 'results#archives',as: :results_archive
   
-  resources :schedules,  :except =>[:new,:update,:delete,:edit]
-  resources :informations,  :except =>[:new,:update,:delete,:edit]
-  resources :results,  :except =>[:new,:update,:delete,:edit]
-  resources :users,  :except =>[:new,:update,:delete,:edit]
+  resources :schedules,  only: [:index, :show, :create]
+  resources :informations,  only: [:index, :show, :create]
+  resources :results,  only: [:index, :show, :create]
+  resources :users,  only: [:index, :show, :create]
+  
+   namespace :api, {format: 'json'} do
+    namespace :v1 do
+      resources :instagrams, only: [:index]
+    end
+  end
 
 end
