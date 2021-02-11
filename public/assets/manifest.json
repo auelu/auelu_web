@@ -1,0 +1,44 @@
+{
+  "app.js": "/assets/js/app-a44e2971e0cb2a79b452.js",
+  "app.js.map": "/assets/js/app-a44e2971e0cb2a79b452.js.map",
+  "app_vue.js": "/assets/js/app_vue-e7af378d412f1d7819c4.js",
+  "app_vue.js.map": "/assets/js/app_vue-e7af378d412f1d7819c4.js.map",
+  "components/insta.js": "/assets/js/components/insta-5586033fa39229692fd7.js",
+  "components/insta.js.map": "/assets/js/components/insta-5586033fa39229692fd7.js.map",
+  "entrypoints": {
+    "app_vue": {
+      "js": [
+        "/assets/js/app_vue-e7af378d412f1d7819c4.js"
+      ],
+      "js.map": [
+        "/assets/js/app_vue-e7af378d412f1d7819c4.js.map"
+      ]
+    },
+    "app": {
+      "js": [
+        "/assets/js/app-a44e2971e0cb2a79b452.js"
+      ],
+      "js.map": [
+        "/assets/js/app-a44e2971e0cb2a79b452.js.map"
+      ]
+    },
+    "components/insta": {
+      "js": [
+        "/assets/js/components/insta-5586033fa39229692fd7.js"
+      ],
+      "js.map": [
+        "/assets/js/components/insta-5586033fa39229692fd7.js.map"
+      ]
+    },
+    "router": {
+      "js": [
+        "/assets/js/router-70f9443bb6c3be337046.js"
+      ],
+      "js.map": [
+        "/assets/js/router-70f9443bb6c3be337046.js.map"
+      ]
+    }
+  },
+  "router.js": "/assets/js/router-70f9443bb6c3be337046.js",
+  "router.js.map": "/assets/js/router-70f9443bb6c3be337046.js.map"
+}
