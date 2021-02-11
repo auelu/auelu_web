@@ -7,7 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <meta name="description" content="大阪府高槻市の体育館で主に活動をしている社会人フットサルチームです。現在大阪府フットサルリーグ3部に所属しています。体験参加、練習試合相手絶賛募集中！">
+    <meta name="description" content="<%= document_description %>">
     <meta name="keywords" content="大阪府社会人フットサル,チームアウエル,TEAM*AUEU,高槻社会人フットサル"/>
     <meta name="google-site-verification" content="9BiU6xzDoDqv0bmj50mopxtb3YYAHnotVtkY0oTZcYw" />
     <meta name="viewport" content="width=580px">
@@ -57,6 +57,5 @@
       };
     </script>
     <%= javascript_pack_tag 'app_vue' %>
-
   </body>
 </html>
