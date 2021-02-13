@@ -9,7 +9,7 @@ Vue.use(Vuetify)
 
 document.addEventListener('DOMContentLoaded', () => {
   new Vue({
-    el: '#hello',
+    el: '#instagram',
     router,
     vuetify: new Vuetify(),
     render: h => h(App)

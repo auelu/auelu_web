@@ -5,29 +5,28 @@ body{
   height: 100%;
 }
 
-.font_h2 {
-    padding:20px;
-    width:300px;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 500;
-    font-size: 15px;
-    color:#000;
-    margin: 0 auto;
-}
-
-.font_span {
-    display: block;
-    color: #CC0000;
-    font-size: 40px;
-    letter-spacing: 20px;
-}
-
 ul {
     list-style: none;
 }
 
 .jumbotron {
     margin-bottom: 0;
+}
+
+.title-h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-size: 40px;
+    color:#C00;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 15px;
+}
+.title_span {
+    display: block;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 5px;
 }
 
 //header
@@ -120,15 +119,6 @@ header{
     background-position: center center;
 }
 
-.begin {
-    padding-top: 55px;
-}
-
-.begin h2{
-    font-size: 16px;
-    opacity: 0.8;
-}
-
 .news{
     background-color: #FFF; 
     padding-top: 50px;
@@ -158,84 +148,6 @@ header{
 
 .box_srcollbar a:hover {
     color: #CC3333;
-}
-
-.catalogue{
-    color: white;
-}
-
-.catalogue .row{
-    margin-right: 0;
-    margin-left: 0;
-    padding: 50px;
-}
-.topNav {
-    padding: 40px 50px 0;
-    background-image: url(home-img.png);
-    margin-top: 140px;
-}
-
-.containt-items {
-    text-align: center;
-    padding: 30px 0;
-    position: relative;
-    z-index: 1;
-    transform: translateY(-150px);
-    color: #000;
-}      
-
-.container-items p {
-    padding-bottom: 20px;    
-}
-
-.items_span {
-    letter-spacing: 3px;   
-    font-size: 30px;
-}
-
-.containt-items a {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 80%;
-    height: 100%;
-    text-indent:-999px;
-    z-index: 2; 
-}
-.containt-items:hover {
-    transform:  translateY(-130px);
-    transition: all 1.5s;
-}
-
-.home-items {
-    background-color: #FFF;
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
-
-.insta-font {
-    padding: 23px 0;
-}
-
-.insta_span {
-    letter-spacing: 3px;    
-}
-
-.insta-extend {
-    width: 50px;
-}
-
-.insta-table {
-  display: block;
-  overflow-x: auto;
-  max-width: 100%;
-}
-
-.img_200 {
-    height: 310px;
-    border-radius: 10px;
 }
 
 

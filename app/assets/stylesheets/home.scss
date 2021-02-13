@@ -1,0 +1,58 @@
+.concept-text {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0 35px;
+}
+
+.topNav {
+    padding: 40px 50px 0;
+    background-image: url(home-img.png);
+    margin-top: 140px;
+}
+
+.containt-items {
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-150px);
+    color: #000;
+}      
+
+.containt-items a {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; 
+}
+.containt-items:hover {
+    transform:  translateY(-130px);
+    transition: all 1.5s;
+}
+
+
+.home-items {
+    text-align: center;
+    background-color: #FFF;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.home-items-img {
+    height: 310px;
+    border-radius: 10px;
+    margin-bottom: 12px
+}
+
+.font-h3 {
+    font-size: 30px;
+    color:#C00;
+}
+
+.insta-fuild {
+    margin: 40px 0;
+}
