@@ -3,48 +3,49 @@
 
 <div class="jumbotron jumbotron-fluid jumbotron-other">
     <div class="inner">
-        <h1>チーム紹介<span>INTRODUCE</span></h1>
+        <h1>チーム概要<span>ABOUT</span></h1>
         <%= render '/shared/hometag' %>
     </div>
 </div>
+
 <div class="cantainer-fuild container-other">
 </div>
-<div class="container-fuild font">
-    <h2 id="about">
-        チームアウエルについて
-        <span>
-            AboutTeamAuelu
-        </span>
-    </h2>
-    <p class="auelu-about">
-        auxo成長を司るギリシャ神話の女神
-ueltex　ラテン語の頂、頂上
 
-上記の二つの言葉を融合して、成長し続ける頂という意味を持たせてアウエルという名前を創りました。
-
-因みに私の中での成長し続ける頂とは今でも高くなり続けているヒマラヤ山脈ですが、アウエルに関わる皆が成長し続けることができる場であって欲しいという願いを込めています
-    </p>
-    <div>
-        <h2 id="outline">
-        チーム情報
-            <span>
-                Outline
-            </span>
+<div class="container concept-text">
+    <div class="title-h2">
+        <h2 id="about">
+            アウエルについて
+            <span class="title_span">About</span>
         </h2>
-    <table>
-        <tbody>
+    </div>
+    <p>
+        auxo成長を司るギリシャ神話の女神ueltex　ラテン語の頂、頂上上記の二つの言葉を融合して、成長し続ける頂という意味を持たせてアウエルという名前を創りました。因みに私の中での成長し続ける頂とは今でも高くなり続けているヒマラヤ山脈ですが、アウエルに関わる皆が成長し続けることができる場であって欲しいという願いを込めています。
+    </p>
+</div>
+
+<div class="container concept-text">
+    <div class="title-h2">
+        <h2 id="outline">
+            チーム情報
+            <span class="title_span">Outline</span>
+        </h2>
+    </div>
+</div>
+
+<table>
+    <tbody>
         <tr>
             <th>
                 クラブ名
             </th>
             <td>TEAM*AUELU</td>
         </tr>
-        <tr>
-            <th>
-                設立
-            </th>
-            <td>2005年</td>
-        </tr>
+    <tr>
+        <th>
+            設立
+        </th>
+        <td>2005年</td>
+    </tr>
         <tr>
             <th>
                 活動地域
@@ -69,28 +70,30 @@ ueltex　ラテン語の頂、頂上
             </th>
             <td>大阪府フットサル連盟、大阪府サッカー協会、茨木市サッカー連盟</td>
         </tr>
-        </tbody>
-    </table>
-    <div class="unipadding">
-            <h2 id="uniform">
-        ユニフォーム
-            <span>
-                Uniform
-            </span>
+    </tbody>
+</table>
+
+<div class="container concept-text">
+    <div class="title-h2">
+        <h2 id="uniform">
+            ユニフォーム
+            <span class="title_span">Uniform</span>
         </h2>
-        <div class="container font">
-            <div class="row">
-            <div class="col-sm-12 col-lg-6">
-            <h3>ホーム</h3>
-        <%= image_tag 'uniform1.jpg', :size =>"350x250", :alt => 'ホームユニフォーム' %>
+    </div>
+</div>
+
+<div class="container uniform">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <h3 class="font-h3">ホーム
+            <span class="title_span">Home</span></h3>
+            <%= image_tag 'uniform1.jpg', :size =>"350x250", :alt => 'ホームユニフォーム' %>
         </div>
         <div class="col-sm-12 col-lg-6">
-            <h3>アウェー</h3>
-        <%= image_tag 'uniform2.jpg', :size =>"350x250", :alt => 'アウェーユニフォーム' %>
+            <h3 class="font-h3">アウェー
+            <span class="title_span">Away</span></h3>
+            <%= image_tag 'uniform2.jpg', :size =>"350x250", :alt => 'アウェーユニフォーム' %>
         </div>
-        </div>
-        </div>
-    </div>
     </div>
 </div>
 
