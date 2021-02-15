@@ -1,84 +1,64 @@
 {
-  "app.js": "/assets/js/app-56fb436bccc3f188d151.js",
-  "app.js.map": "/assets/js/app-56fb436bccc3f188d151.js.map",
-  "app_vue.css": "/assets/css/app_vue-110e0dc1.css",
-  "app_vue.js": "/assets/js/app_vue-a41c83a505bb08eed162.js",
-  "app_vue.js.map": "/assets/js/app_vue-a41c83a505bb08eed162.js.map",
-  "components/insta.css": "/assets/css/components/insta-67852b5e.css",
-  "components/insta.js": "/assets/js/components/insta-caa5d4646f42a4ec6e16.js",
-  "components/insta.js.map": "/assets/js/components/insta-caa5d4646f42a4ec6e16.js.map",
-  "components/top.css": "/assets/css/components/top-b9d05729.css",
-  "components/top.js": "/assets/js/components/top-79f5b924ad6c65472de2.js",
-  "components/top.js.map": "/assets/js/components/top-79f5b924ad6c65472de2.js.map",
+  "app.js": "/assets/js/app-8b84d6180e50d6605071.js",
+  "app.js.map": "/assets/js/app-8b84d6180e50d6605071.js.map",
+  "app_vue.js": "/assets/js/app_vue-c7a0675a77d6a5fa728c.js",
+  "app_vue.js.map": "/assets/js/app_vue-c7a0675a77d6a5fa728c.js.map",
+  "components/insta.js": "/assets/js/components/insta-0f1f0264ba6a42291a3b.js",
+  "components/insta.js.map": "/assets/js/components/insta-0f1f0264ba6a42291a3b.js.map",
+  "components/top.js": "/assets/js/components/top-c7d487c4684d1a46e772.js",
+  "components/top.js.map": "/assets/js/components/top-c7d487c4684d1a46e772.js.map",
   "entrypoints": {
     "app_vue": {
-      "css": [
-        "/assets/css/app_vue-110e0dc1.css"
-      ],
       "js": [
-        "/assets/js/app_vue-a41c83a505bb08eed162.js"
+        "/assets/js/app_vue-c7a0675a77d6a5fa728c.js"
       ],
       "js.map": [
-        "/assets/js/app_vue-a41c83a505bb08eed162.js.map"
+        "/assets/js/app_vue-c7a0675a77d6a5fa728c.js.map"
       ]
     },
     "app": {
       "js": [
-        "/assets/js/app-56fb436bccc3f188d151.js"
+        "/assets/js/app-8b84d6180e50d6605071.js"
       ],
       "js.map": [
-        "/assets/js/app-56fb436bccc3f188d151.js.map"
+        "/assets/js/app-8b84d6180e50d6605071.js.map"
       ]
     },
     "components/insta": {
-      "css": [
-        "/assets/css/components/insta-67852b5e.css"
-      ],
       "js": [
-        "/assets/js/components/insta-caa5d4646f42a4ec6e16.js"
+        "/assets/js/components/insta-0f1f0264ba6a42291a3b.js"
       ],
       "js.map": [
-        "/assets/js/components/insta-caa5d4646f42a4ec6e16.js.map"
+        "/assets/js/components/insta-0f1f0264ba6a42291a3b.js.map"
       ]
     },
     "components/top": {
-      "css": [
-        "/assets/css/components/top-b9d05729.css"
-      ],
       "js": [
-        "/assets/js/components/top-79f5b924ad6c65472de2.js"
+        "/assets/js/components/top-c7d487c4684d1a46e772.js"
       ],
       "js.map": [
-        "/assets/js/components/top-79f5b924ad6c65472de2.js.map"
+        "/assets/js/components/top-c7d487c4684d1a46e772.js.map"
       ]
     },
     "router": {
-      "css": [
-        "/assets/css/router-67852b5e.css"
-      ],
       "js": [
-        "/assets/js/router-82550585a1cf0294bda8.js"
+        "/assets/js/router-bd690096c1085ae2ad31.js"
       ],
       "js.map": [
-        "/assets/js/router-82550585a1cf0294bda8.js.map"
+        "/assets/js/router-bd690096c1085ae2ad31.js.map"
       ]
     },
     "top_vue": {
-      "css": [
-        "/assets/css/top_vue-b9d05729.css"
-      ],
       "js": [
-        "/assets/js/top_vue-7f91f5e935d1c57ce69a.js"
+        "/assets/js/top_vue-2f372275770484add06a.js"
       ],
       "js.map": [
-        "/assets/js/top_vue-7f91f5e935d1c57ce69a.js.map"
+        "/assets/js/top_vue-2f372275770484add06a.js.map"
       ]
     }
   },
-  "router.css": "/assets/css/router-67852b5e.css",
-  "router.js": "/assets/js/router-82550585a1cf0294bda8.js",
-  "router.js.map": "/assets/js/router-82550585a1cf0294bda8.js.map",
-  "top_vue.css": "/assets/css/top_vue-b9d05729.css",
-  "top_vue.js": "/assets/js/top_vue-7f91f5e935d1c57ce69a.js",
-  "top_vue.js.map": "/assets/js/top_vue-7f91f5e935d1c57ce69a.js.map"
+  "router.js": "/assets/js/router-bd690096c1085ae2ad31.js",
+  "router.js.map": "/assets/js/router-bd690096c1085ae2ad31.js.map",
+  "top_vue.js": "/assets/js/top_vue-2f372275770484add06a.js",
+  "top_vue.js.map": "/assets/js/top_vue-2f372275770484add06a.js.map"
 }
