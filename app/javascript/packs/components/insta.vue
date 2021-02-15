@@ -1,8 +1,5 @@
 <template>
      <v-container>
-       <div class="text-center h2 red--text text--darken-3" my-4>
-         Instagram投稿
-       </div>
         <v-row no-gutters class="flex-row flex-nowrap overflow-auto">
           <v-col cols="5" md="3"v-for="list in lists" :key="list.id">
             <v-card :href="`${list.permalink}`" width="90%">

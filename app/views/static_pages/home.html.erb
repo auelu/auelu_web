@@ -1,40 +1,53 @@
 <% @title = "" %>
 <% @description = "" %>
+<%= javascript_pack_tag 'app_vue' %>
+<%= javascript_pack_tag 'top_vue' %>    
+<%= stylesheet_pack_tag 'top_vue' %>
 
 <div class="jumbotron jumbotron-fluid jumbotron-home">
 <div class="auelu">
-        <h1>大阪府社会人フットサルチーム</h1>
-        <h2>TEAM*AUELU</h2>
+    <div id="top"></div>
 </div>
 
-</div>
-<div class="container begin">
-    <h2>大阪府高槻市の体育館で主に活動をしている社会人フットサルチームです。現在大阪府フットサルリーグ3部に所属しています。練習参加希望の方あるいは練習試合の申し込み相談
-    はお問い合わせをご確認お願いします。</h2>
 </div>
 
 
 <div class="container-fuild news">
-    <div class="box_title">
-        <h2 id="news" class="font_h2">
-            お知らせ
-            <span class="font_span">NEWS</span>
-        </h2></div>
+    
     <div class="box_srcollbar">
         <%= render '/informations/information' %>
     </div>
 </div>
 
- <div id="hello" >
- </div>
- 
+<div class="container concept-text">
+<div class="title-h2">
+    <h2>
+        ご挨拶
+        <span class="title_span">Concept</span>
+    </h2>
+</div>
+
+    <p>大阪府高槻市の体育館で主に活動をしている社会人フットサルチームです。<br>
+    現在大阪府フットサルリーグ3部に所属しています。<br>
+    練習参加希望の方あるいは練習試合の申し込み相談はお問い合わせをご確認お願いします。
+    </p>
+</div>
+
+<div class="title-h2">
+    <h2>
+        私たちについて
+        <span class="title_span">Our Team</span>
+    </h2>
+</div>
+
 <div class="container-fuild">
-    <div class="container-fuild topNav  ">
-        <div class="row catalogue">
+    <div class="topNav  ">
+        <div class="row">
             <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'about.jpg', width: "100%", class: "img_200", :alt => 'チームアウエルについて' %>
-                    <h2 class="font_h2">チーム概要<span class="font_span items_span">ABOUT</span></h2>
+                    <%= image_tag 'about.jpg', width: "100%", class: "home-items-img", :alt => 'チームアウエルについて' %>
+                    <h3 class="font-h3">チーム概要
+                    <span class="title_span">About</span></h3>
                     <p>アウエルについてはこちら</p>
                     <%= link_to "", introduction_path %>  
                 </div>
@@ -42,21 +55,34 @@
             </div>
             <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'result.jpg', width: "100%", class: "img_200", :alt => 'チームアウエルの試合結果' %>
-                    <h2 class="font_h2">試合結果<span class="font_span items_span">RESULT</span></h2>
+                    <%= image_tag 'result.jpg', width: "100%", class: "home-items-img", :alt => 'チームアウエルの試合結果' %>
+                    <h3 class="font-h3">試合結果
+                    <span class="title_span">Result</span></h3>
                     <p>最新の試合結果をチェック☝</p>
                     <%= link_to "", results_path %>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
-                    <%= image_tag 'schedule.jpg', width: "100%", class: "img_200", :alt => 'チームアウエルの今後の予定' %>
-                    <h2 class="font_h2">スケジュール<span class="font_span items_span">SCHEDULE</span></h2>
+                    <%= image_tag 'schedule.jpg', width: "100%", class: "home-items-img", :alt => 'チームアウエルの今後の予定' %>
+                    <h3 class="font-h3">スケジュール
+                    <span class="title_span">Schdule</span></h3>
                     <p>今後の予定はこちら</p>
                     <%= link_to "", schedule_path %>
                 </div>
-            </div>        
+            </div>   
         </div>
     </div>
 </div>
+
+<div class="insta-fuild">
+    <div class="title-h2">
+        <h2>
+            インスタグラム
+            <span class="title_span">Instagram</span>
+        </h2>
+    </div>
+    <div id="instagram"></div>
+</div>
+    
 
