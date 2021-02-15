@@ -1,5 +1,6 @@
 <% @title = "選手紹介" %>
 <% @description = "大阪府高槻市の体育館で主に活動をしている社会人フットサルチームです。アウエルの選手紹介はこちらから確認いただけます！" %>
+<%= javascript_pack_tag 'players_vue' %>   
 
 <div class="jumbotron jumbotron-fluid jumbotron-other">
     <div class="inner">
@@ -7,6 +8,8 @@
         <%= render '/shared/hometag' %>
     </div>
 </div>
+
 <div class="cantainer-fuild container-other">
 </div>
-<%= render '/users/user' %>
+
+<div id="players"></div>
