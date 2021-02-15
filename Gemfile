@@ -40,6 +40,7 @@ gem 'groupdate'
 gem 'sitemap_generator'
 gem 'fog-aws'
 gem "webpacker", "~> 4.x"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

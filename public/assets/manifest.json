@@ -5,8 +5,10 @@
   "app_vue.js.map": "/assets/js/app_vue-52e2d1cbe6c4f94523e6.js.map",
   "components/insta.js": "/assets/js/components/insta-e004cb6c391c8be47fe5.js",
   "components/insta.js.map": "/assets/js/components/insta-e004cb6c391c8be47fe5.js.map",
-  "components/top.js": "/assets/js/components/top-a19d0affc453a98142b0.js",
-  "components/top.js.map": "/assets/js/components/top-a19d0affc453a98142b0.js.map",
+  "components/player.js": "/assets/js/components/player-fad119c6047b7b164dd9.js",
+  "components/player.js.map": "/assets/js/components/player-fad119c6047b7b164dd9.js.map",
+  "components/top.js": "/assets/js/components/top-cabbeb6d20e9135a9012.js",
+  "components/top.js.map": "/assets/js/components/top-cabbeb6d20e9135a9012.js.map",
   "entrypoints": {
     "app_vue": {
       "js": [
@@ -32,12 +34,28 @@
         "/assets/js/components/insta-e004cb6c391c8be47fe5.js.map"
       ]
     },
-    "components/top": {
+    "components/player": {
       "js": [
-        "/assets/js/components/top-a19d0affc453a98142b0.js"
+        "/assets/js/components/player-fad119c6047b7b164dd9.js"
       ],
       "js.map": [
-        "/assets/js/components/top-a19d0affc453a98142b0.js.map"
+        "/assets/js/components/player-fad119c6047b7b164dd9.js.map"
+      ]
+    },
+    "components/top": {
+      "js": [
+        "/assets/js/components/top-cabbeb6d20e9135a9012.js"
+      ],
+      "js.map": [
+        "/assets/js/components/top-cabbeb6d20e9135a9012.js.map"
+      ]
+    },
+    "players_vue": {
+      "js": [
+        "/assets/js/players_vue-c5d52f3b0427135a2fa9.js"
+      ],
+      "js.map": [
+        "/assets/js/players_vue-c5d52f3b0427135a2fa9.js.map"
       ]
     },
     "router": {
@@ -50,15 +68,17 @@
     },
     "top_vue": {
       "js": [
-        "/assets/js/top_vue-4fa9942ac6f34e66083b.js"
+        "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js"
       ],
       "js.map": [
-        "/assets/js/top_vue-4fa9942ac6f34e66083b.js.map"
+        "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js.map"
       ]
     }
   },
+  "players_vue.js": "/assets/js/players_vue-c5d52f3b0427135a2fa9.js",
+  "players_vue.js.map": "/assets/js/players_vue-c5d52f3b0427135a2fa9.js.map",
   "router.js": "/assets/js/router-9d1894f83fd6eb6a51ff.js",
   "router.js.map": "/assets/js/router-9d1894f83fd6eb6a51ff.js.map",
-  "top_vue.js": "/assets/js/top_vue-4fa9942ac6f34e66083b.js",
-  "top_vue.js.map": "/assets/js/top_vue-4fa9942ac6f34e66083b.js.map"
+  "top_vue.js": "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js",
+  "top_vue.js.map": "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js.map"
 }

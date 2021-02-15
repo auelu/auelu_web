@@ -15,7 +15,7 @@
 <style scoped>
 .left-enter-active {
   transform: translate(0px, 0px);
-  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 200ms;
+  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 700ms;
 }
 
 .left-enter {
@@ -27,7 +27,7 @@
 
 .left-sec-enter-active {
   transform: translate(0px, 0px);
-  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 500ms;
+  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 900ms;
 }
 
 .left-sec-enter {
@@ -37,7 +37,7 @@
 }
 
 .bottom-enter-active {
-   transition: opacity 7s;
+   transition: opacity 11s;
 }
 
 .bottom-enter {

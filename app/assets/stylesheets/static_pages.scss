@@ -13,6 +13,12 @@ ul {
     margin-bottom: 0;
 }
 
+.concept-text {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
 .title-h2 {
     font-family: 'Noto Serif JP', serif;
     font-weight: 500;
@@ -22,12 +28,46 @@ ul {
     text-align: center;
     letter-spacing: 15px;
 }
+
+.font-h3 {
+    font-size: 30px;
+    color:#C00;
+}
+
 .title_span {
     display: block;
     color: #000;
     font-size: 15px;
     letter-spacing: 5px;
 }
+
+.link {
+    position: absolute;
+    right: 20px;
+    clear: both;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.link li {
+    float: left;
+    margin-right: 7px;
+    padding-right: 13px;
+    background-size: 5px 7px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.link a {
+    color: #000;
+    opacity: 0.7;
+}
+
+.link a:hover {
+    color: 	#CC3333;
+    text-decoration: none;
+}
+
 
 //header
 header{
