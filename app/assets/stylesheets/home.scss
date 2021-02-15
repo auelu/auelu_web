@@ -56,3 +56,29 @@
 .insta-fuild {
     margin: 40px 0;
 }
+
+.auelu {
+    text-align: right;
+    padding: 150px 15px;
+    opacity: 0.8;
+    color: #C33;
+    text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+.auelu h1 {
+    font-size: 3vh;
+}
+
+.auelu h2 {
+    font-size: 2.5vh;
+}
+
+.auelu p {
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 220px;
+    background-color: #fff;
+}

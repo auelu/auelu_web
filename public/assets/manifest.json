@@ -1,17 +1,19 @@
 {
   "app.js": "/assets/js/app-a44e2971e0cb2a79b452.js",
   "app.js.map": "/assets/js/app-a44e2971e0cb2a79b452.js.map",
-  "app_vue.js": "/assets/js/app_vue-d5dae506668ce350771e.js",
-  "app_vue.js.map": "/assets/js/app_vue-d5dae506668ce350771e.js.map",
+  "app_vue.js": "/assets/js/app_vue-52e2d1cbe6c4f94523e6.js",
+  "app_vue.js.map": "/assets/js/app_vue-52e2d1cbe6c4f94523e6.js.map",
   "components/insta.js": "/assets/js/components/insta-e004cb6c391c8be47fe5.js",
   "components/insta.js.map": "/assets/js/components/insta-e004cb6c391c8be47fe5.js.map",
+  "components/top.js": "/assets/js/components/top-a19d0affc453a98142b0.js",
+  "components/top.js.map": "/assets/js/components/top-a19d0affc453a98142b0.js.map",
   "entrypoints": {
     "app_vue": {
       "js": [
-        "/assets/js/app_vue-d5dae506668ce350771e.js"
+        "/assets/js/app_vue-52e2d1cbe6c4f94523e6.js"
       ],
       "js.map": [
-        "/assets/js/app_vue-d5dae506668ce350771e.js.map"
+        "/assets/js/app_vue-52e2d1cbe6c4f94523e6.js.map"
       ]
     },
     "app": {
@@ -30,6 +32,14 @@
         "/assets/js/components/insta-e004cb6c391c8be47fe5.js.map"
       ]
     },
+    "components/top": {
+      "js": [
+        "/assets/js/components/top-a19d0affc453a98142b0.js"
+      ],
+      "js.map": [
+        "/assets/js/components/top-a19d0affc453a98142b0.js.map"
+      ]
+    },
     "router": {
       "js": [
         "/assets/js/router-9d1894f83fd6eb6a51ff.js"
@@ -37,8 +47,18 @@
       "js.map": [
         "/assets/js/router-9d1894f83fd6eb6a51ff.js.map"
       ]
+    },
+    "top_vue": {
+      "js": [
+        "/assets/js/top_vue-4fa9942ac6f34e66083b.js"
+      ],
+      "js.map": [
+        "/assets/js/top_vue-4fa9942ac6f34e66083b.js.map"
+      ]
     }
   },
   "router.js": "/assets/js/router-9d1894f83fd6eb6a51ff.js",
-  "router.js.map": "/assets/js/router-9d1894f83fd6eb6a51ff.js.map"
+  "router.js.map": "/assets/js/router-9d1894f83fd6eb6a51ff.js.map",
+  "top_vue.js": "/assets/js/top_vue-4fa9942ac6f34e66083b.js",
+  "top_vue.js.map": "/assets/js/top_vue-4fa9942ac6f34e66083b.js.map"
 }
