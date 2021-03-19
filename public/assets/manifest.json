@@ -53,14 +53,6 @@
       "js.map": [
         "/assets/js/router-eee279bb3557b87d824f.js.map"
       ]
-    },
-    "top_vue": {
-      "js": [
-        "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js"
-      ],
-      "js.map": [
-        "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js.map"
-      ]
     }
   },
   "home_vue.js": "/assets/js/home_vue-3cd603cc99970852eea8.js",
@@ -68,7 +60,5 @@
   "players_vue.js": "/assets/js/players_vue-c5d52f3b0427135a2fa9.js",
   "players_vue.js.map": "/assets/js/players_vue-c5d52f3b0427135a2fa9.js.map",
   "router.js": "/assets/js/router-eee279bb3557b87d824f.js",
-  "router.js.map": "/assets/js/router-eee279bb3557b87d824f.js.map",
-  "top_vue.js": "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js",
-  "top_vue.js.map": "/assets/js/top_vue-df2d11aa2d9c8fc7cb2b.js.map"
+  "router.js.map": "/assets/js/router-eee279bb3557b87d824f.js.map"
 }
