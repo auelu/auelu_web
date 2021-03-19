@@ -1,4 +1,4 @@
-class Api::V2::PlayersController < ApiController
+class Api::V1::PlayersController < ApiController
 
   def index
     players = User.all.order("number")

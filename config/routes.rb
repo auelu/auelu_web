@@ -25,8 +25,6 @@ Rails.application.routes.draw do
    namespace :api, {format: 'json'} do
     namespace :v1 do
       resources :instagrams, only: [:index]
-    end
-    namespace :v2 do
       resources :players, only: [:index, :show]
     end
   end
