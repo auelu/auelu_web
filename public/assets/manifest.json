@@ -1,64 +1,84 @@
 {
-  "components/insta.js": "/assets/js/components/insta-e378b146499fa77c0da7.js",
-  "components/insta.js.map": "/assets/js/components/insta-e378b146499fa77c0da7.js.map",
-  "components/player.js": "/assets/js/components/player-fad119c6047b7b164dd9.js",
-  "components/player.js.map": "/assets/js/components/player-fad119c6047b7b164dd9.js.map",
-  "components/top.js": "/assets/js/components/top-cabbeb6d20e9135a9012.js",
-  "components/top.js.map": "/assets/js/components/top-cabbeb6d20e9135a9012.js.map",
+  "components/insta.css": "/assets/css/components/insta-bb4df072.css",
+  "components/insta.js": "/assets/js/components/insta-12d1a72c0e1992bdbc8e.js",
+  "components/insta.js.map": "/assets/js/components/insta-12d1a72c0e1992bdbc8e.js.map",
+  "components/player.js": "/assets/js/components/player-71fcd6f4092641350924.js",
+  "components/player.js.map": "/assets/js/components/player-71fcd6f4092641350924.js.map",
+  "components/top.css": "/assets/css/components/top-605b42ce.css",
+  "components/top.js": "/assets/js/components/top-27a51b196f4e2639868b.js",
+  "components/top.js.map": "/assets/js/components/top-27a51b196f4e2639868b.js.map",
   "entrypoints": {
     "components/insta": {
+      "css": [
+        "/assets/css/components/insta-bb4df072.css"
+      ],
       "js": [
-        "/assets/js/components/insta-e378b146499fa77c0da7.js"
+        "/assets/js/components/insta-12d1a72c0e1992bdbc8e.js"
       ],
       "js.map": [
-        "/assets/js/components/insta-e378b146499fa77c0da7.js.map"
+        "/assets/js/components/insta-12d1a72c0e1992bdbc8e.js.map"
       ]
     },
     "components/player": {
       "js": [
-        "/assets/js/components/player-fad119c6047b7b164dd9.js"
+        "/assets/js/components/player-71fcd6f4092641350924.js"
       ],
       "js.map": [
-        "/assets/js/components/player-fad119c6047b7b164dd9.js.map"
+        "/assets/js/components/player-71fcd6f4092641350924.js.map"
       ]
     },
     "components/top": {
+      "css": [
+        "/assets/css/components/top-605b42ce.css"
+      ],
       "js": [
-        "/assets/js/components/top-cabbeb6d20e9135a9012.js"
+        "/assets/js/components/top-27a51b196f4e2639868b.js"
       ],
       "js.map": [
-        "/assets/js/components/top-cabbeb6d20e9135a9012.js.map"
+        "/assets/js/components/top-27a51b196f4e2639868b.js.map"
       ]
     },
     "home_vue": {
+      "css": [
+        "/assets/css/home_vue-9ec6e0ea.css"
+      ],
       "js": [
-        "/assets/js/home_vue-3cd603cc99970852eea8.js"
+        "/assets/js/home_vue-642e39ff962d4b4c7566.js"
       ],
       "js.map": [
-        "/assets/js/home_vue-3cd603cc99970852eea8.js.map"
+        "/assets/js/home_vue-642e39ff962d4b4c7566.js.map"
       ]
     },
     "players_vue": {
+      "css": [
+        "/assets/css/players_vue-7d5a7ef7.css"
+      ],
       "js": [
-        "/assets/js/players_vue-c5d52f3b0427135a2fa9.js"
+        "/assets/js/players_vue-f6b9a8bb263cc892c463.js"
       ],
       "js.map": [
-        "/assets/js/players_vue-c5d52f3b0427135a2fa9.js.map"
+        "/assets/js/players_vue-f6b9a8bb263cc892c463.js.map"
       ]
     },
     "router": {
+      "css": [
+        "/assets/css/router-bb4df072.css"
+      ],
       "js": [
-        "/assets/js/router-eee279bb3557b87d824f.js"
+        "/assets/js/router-7054316d9c913eaae553.js"
       ],
       "js.map": [
-        "/assets/js/router-eee279bb3557b87d824f.js.map"
+        "/assets/js/router-7054316d9c913eaae553.js.map"
       ]
     }
   },
-  "home_vue.js": "/assets/js/home_vue-3cd603cc99970852eea8.js",
-  "home_vue.js.map": "/assets/js/home_vue-3cd603cc99970852eea8.js.map",
-  "players_vue.js": "/assets/js/players_vue-c5d52f3b0427135a2fa9.js",
-  "players_vue.js.map": "/assets/js/players_vue-c5d52f3b0427135a2fa9.js.map",
-  "router.js": "/assets/js/router-eee279bb3557b87d824f.js",
-  "router.js.map": "/assets/js/router-eee279bb3557b87d824f.js.map"
+  "home_vue.css": "/assets/css/home_vue-9ec6e0ea.css",
+  "home_vue.js": "/assets/js/home_vue-642e39ff962d4b4c7566.js",
+  "home_vue.js.map": "/assets/js/home_vue-642e39ff962d4b4c7566.js.map",
+  "players_vue.css": "/assets/css/players_vue-7d5a7ef7.css",
+  "players_vue.js": "/assets/js/players_vue-f6b9a8bb263cc892c463.js",
+  "players_vue.js.map": "/assets/js/players_vue-f6b9a8bb263cc892c463.js.map",
+  "router.css": "/assets/css/router-bb4df072.css",
+  "router.js": "/assets/js/router-7054316d9c913eaae553.js",
+  "router.js.map": "/assets/js/router-7054316d9c913eaae553.js.map"
 }
