@@ -1,0 +1,5 @@
+<div style="height: 500px;">a</div>
+<%= form_for( @gamedata , url:{controller: "results" , action: "create"} ) do |c| %>
+<%= c.collection_select( :scorer, User.all, :name, :name, {include_hidden: false},{multiple: true}) %>
+<%= c.submit '送信'%>
+<% end %>
