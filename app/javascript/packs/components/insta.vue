@@ -1,6 +1,6 @@
 <template>
      <v-container>
-        <v-row no-gutters class="flex-row flex-nowrap overflow-auto">
+        <v-row no-gutters class="flex-nowrap scroll">
           <v-col cols="5" md="3"v-for="list in lists" :key="list.id">
             <v-card :href="`${list.permalink}`" width="90%">
               <v-img :src="`${list.media_url}`" height="230px"></v-img>
@@ -39,5 +39,8 @@ export default {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+  .scroll {
+    overflow-x: scroll;
   }
 </style>

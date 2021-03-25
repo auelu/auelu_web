@@ -1,19 +1,18 @@
 <% @title = "" %>
 <% @description = "" %>
-<%= javascript_pack_tag 'app_vue' %>
-<%= javascript_pack_tag 'top_vue' %>    
+<%= javascript_pack_tag 'home_vue' %>
+<%= stylesheet_pack_tag 'home_vue' %>
+
 
 
 <div class="jumbotron jumbotron-fluid jumbotron-home">
-<div class="auelu">
-    <div id="top"></div>
-</div>
-
+    <div class="auelu">
+        <div id="top" />
+    </div>
 </div>
 
 
 <div class="container-fuild news">
-    
     <div class="box_srcollbar">
         <%= render '/informations/information' %>
     </div>
@@ -26,7 +25,6 @@
         <span class="title_span">Concept</span>
     </h2>
 </div>
-
     <p>大阪府高槻市の体育館で主に活動をしている社会人フットサルチームです。<br>
     現在大阪府フットサルリーグ3部に所属しています。<br>
     練習参加希望の方あるいは練習試合の申し込み相談はお問い合わせをご確認お願いします。
@@ -62,6 +60,7 @@
                     <%= link_to "", results_path %>
                 </div>
             </div>
+            
             <div class="col-sm-12 col-lg-4 containt-items">
                 <div class="home-items">
                     <%= image_tag 'schedule.jpg', width: "100%", class: "home-items-img", :alt => 'チームアウエルの今後の予定' %>
@@ -82,7 +81,7 @@
             <span class="title_span">Instagram</span>
         </h2>
     </div>
-    <div id="instagram"></div>
+    <div id="instagram" />
 </div>
     
 
