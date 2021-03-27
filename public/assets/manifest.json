@@ -1,23 +1,11 @@
 {
-  "components/contact.js": "/assets/js/components/contact-fb2f232df50619e8a7d8.js",
-  "components/contact.js.map": "/assets/js/components/contact-fb2f232df50619e8a7d8.js.map",
   "components/insta.js": "/assets/js/components/insta-e378b146499fa77c0da7.js",
   "components/insta.js.map": "/assets/js/components/insta-e378b146499fa77c0da7.js.map",
   "components/player.js": "/assets/js/components/player-ed3b65787c859b390690.js",
   "components/player.js.map": "/assets/js/components/player-ed3b65787c859b390690.js.map",
   "components/top.js": "/assets/js/components/top-cabbeb6d20e9135a9012.js",
   "components/top.js.map": "/assets/js/components/top-cabbeb6d20e9135a9012.js.map",
-  "contact_vue.js": "/assets/js/contact_vue-f0063fbd4d6ee1c3d981.js",
-  "contact_vue.js.map": "/assets/js/contact_vue-f0063fbd4d6ee1c3d981.js.map",
   "entrypoints": {
-    "components/contact": {
-      "js": [
-        "/assets/js/components/contact-fb2f232df50619e8a7d8.js"
-      ],
-      "js.map": [
-        "/assets/js/components/contact-fb2f232df50619e8a7d8.js.map"
-      ]
-    },
     "components/insta": {
       "js": [
         "/assets/js/components/insta-e378b146499fa77c0da7.js"
@@ -40,14 +28,6 @@
       ],
       "js.map": [
         "/assets/js/components/top-cabbeb6d20e9135a9012.js.map"
-      ]
-    },
-    "contact_vue": {
-      "js": [
-        "/assets/js/contact_vue-f0063fbd4d6ee1c3d981.js"
-      ],
-      "js.map": [
-        "/assets/js/contact_vue-f0063fbd4d6ee1c3d981.js.map"
       ]
     },
     "home_vue": {
