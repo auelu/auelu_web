@@ -10,13 +10,13 @@ class Api::V1::InstagramsController < ApiController
     require 'json'
 
     def instalist
-        uri = URI.parse("https://graph.instagram.com/me/media?fields=id&access_token=IGQVJYZAnFJRWpkZAWRObU42R1pTaW9mbVA3NElTbzE2eDVOUnhGODBUQk1nUmJDbExSdGNHS2hnQlNRTHM3WGIwVk5tNzZAWM0FJSnpCcVlsVjhOd1prd2EyVDVRTmhmMDdvRGZAuOUd3")
+        uri = URI.parse("https://graph.instagram.com/me/media?fields=id&access_token=IGQVJXRUczUVNHU2xYVm1xc1dvRm5JbmVPczhmV3NUOXR6d1hUZAmtTTFNlQmFUT3NTOWdWbTlyUmRZANldxUnJSQlBhYThRZAk9mU2xBMTV3YkVHZAFV4aFVWMEFrazg2T0pid3B3Y3gxNUV0dHVDdE9XUQZDZD")
         json = Net::HTTP.get(uri)
         insta= JSON.parse(json)
         instagrams = []
         for value in insta["data"][0..10] do
             hash = value["id"]
-            uri = URI.parse ("https://graph.instagram.com/#{hash}?fields=media_url,caption,permalink&access_token=IGQVJYZAnFJRWpkZAWRObU42R1pTaW9mbVA3NElTbzE2eDVOUnhGODBUQk1nUmJDbExSdGNHS2hnQlNRTHM3WGIwVk5tNzZAWM0FJSnpCcVlsVjhOd1prd2EyVDVRTmhmMDdvRGZAuOUd3")
+            uri = URI.parse ("https://graph.instagram.com/#{hash}?fields=media_url,caption,permalink&access_token=IGQVJXRUczUVNHU2xYVm1xc1dvRm5JbmVPczhmV3NUOXR6d1hUZAmtTTFNlQmFUT3NTOWdWbTlyUmRZANldxUnJSQlBhYThRZAk9mU2xBMTV3YkVHZAFV4aFVWMEFrazg2T0pid3B3Y3gxNUV0dHVDdE9XUQZDZD")
             json = Net::HTTP.get(uri)
             insta= JSON.parse(json)
             instagrams.push(insta)
